@@ -1,0 +1,13 @@
+Реализуйте и экспортируйте функцию по умолчанию, которая принимает на вход объект со свойствами title и text, и возвращает jsx с подставленными значениями. Пример:
+
+import getCard from '/Card';
+
+getCard({ title: 'hi', text: 'how are you?' });
+// <div className="card">
+//   <div className="card-body">
+//     <h4 className="card-title">hi</h4>
+//     <p className="card-text">how are you?</p>
+//   </div>
+// </div>
+
+Если title отсутствует, то соответствующий ему кусок dom не отрисовывается, тоже самое справедливо и для text. Если отсутствуют оба свойства, то из функции необходимо вернуть null.
